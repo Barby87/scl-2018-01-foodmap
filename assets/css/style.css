@@ -1,6 +1,10 @@
+#autocomplete {
+  margin: 20px;
+}
+
 #map {
   height: 50vh;
-  width: 50%;
+  width: 100%;
   margin: 20px;
 }
 

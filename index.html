@@ -13,12 +13,18 @@
 </head>
 
 <body>
-
-  <div id="map"></div>
+  <div id="container">
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" id="autocomplete" class="form-control">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
 
 
   <!--Link de la API de Google Maps-->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiIf3gGGi0Zm_hDeyXsf0whkJGEduF4e4&callback=initMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiIf3gGGi0Zm_hDeyXsf0whkJGEduF4e4&libraries=places"></script>
   
   <!--Link js Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
