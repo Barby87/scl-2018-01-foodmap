@@ -1,3 +1,17 @@
+/*Displays
+
+#preload {
+  display: block;
+}
+
+#homePage {
+  display: none; 
+}
+*/
+#options {
+  margin: 20px;
+}
+
 #autocomplete {
   margin: 20px;
 }
