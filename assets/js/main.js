@@ -1,3 +1,15 @@
+window.onload = () => {
+	setTimeout(function(){
+    const preload = document.getElementById('preload');
+    const home = document.getElementById('home');
+    preload.style.display = 'none';
+    preload.style.opacity = '0';
+    home.style.display = 'block';
+  },4000);
+ 
+  
+}
+
 google.maps.event.addDomListener(window, "load", function(){
 
   const ubicacion = new localization(()=>{

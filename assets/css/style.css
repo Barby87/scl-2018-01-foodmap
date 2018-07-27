@@ -1,13 +1,25 @@
-/*Displays
-
+/*Displays*/
 #preload {
   display: block;
+  margin-top: 100px;
+  color: #F07A1C;
 }
 
-#homePage {
-  display: none; 
+#home {
+  display: none;
 }
-*/
+
+
+/*Estilos*/
+h1 {
+  color: #F07A1C;
+  margin-top: 20px;
+}
+
+#gifLoading {
+  margin: 40px;
+}
+
 #options {
   margin: 20px;
 }
@@ -30,4 +42,5 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
