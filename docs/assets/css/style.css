@@ -41,11 +41,7 @@ label {
   color: gray;
 } 
 
-#options {
-  margin: 20px;
-}
-
-#autocomplete {
+#options, #autocomplete {
   margin: 20px;
 }
 
