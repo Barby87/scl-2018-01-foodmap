@@ -3,10 +3,8 @@ window.onload = () => {
     const preload = document.getElementById('preload');
     const home = document.getElementById('home');
     preload.style.display = 'none';
-    preload.style.opacity = '0';
     home.style.display = 'block';
   },4000);
- 
   
 }
 
@@ -23,21 +21,21 @@ google.maps.event.addDomListener(window, "load", function(){
     }
 
     // Dibujando mapa dentro del div "map"
-    var map = document.getElementById('map');
+    const map = document.getElementById('map');
     const mapa = new google.maps.Map(map, options);
     const marcador = new google.maps.Marker({
       position: myLatLng,
       map: mapa,
     });
 
-    var informacion = new google.maps.InfoWindow({
+    let informacion = new google.maps.InfoWindow({
     });
 
     marcador.addListener('click', function(){
       informacion.open(mapa, marcador);
     });
     
-    var autocomplete = document.getElementById('autocomplete');
+    const autocomplete = document.getElementById('autocomplete');
    
     const search = new google.maps.places.Autocomplete(autocomplete);
     search.bindTo("bounds",mapa) // Parámetro bounds permite restringir las búsquedas
@@ -49,7 +47,7 @@ google.maps.event.addDomListener(window, "load", function(){
       marcador.setVisible(false); // Ocultando marcador
 
       // Guardando nuevo lugar en una nueva variable
-      var place = search.getPlace();
+      let place = search.getPlace();
 
       if(!place.geometry.viewport) {
         window.alert("Error al mostrar el lugar");
@@ -67,7 +65,7 @@ google.maps.event.addDomListener(window, "load", function(){
       marcador.setPosition(place.geometry.location);
       marcador.setVisible(true);
 
-      var address = "";
+      let address = "";
       if (place.addres_components) {
         address = [
           (place.address_components[0] && place.address_components[0].short_name || ''),
